@@ -5,6 +5,7 @@ import requests
 import numpy as np
 import nltk
 import joblib
+import sys
 from random import shuffle
 from nltk.corpus import twitter_samples
 from nltk.corpus import stopwords
@@ -14,7 +15,7 @@ from sklearn.model_selection import train_test_split
 from tqdm import tqdm
 from nltk import data
 
-message = argv[1]
+message = sys.argv[1]
 
 log_folder = './'
 
