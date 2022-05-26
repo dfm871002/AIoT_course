@@ -1,0 +1,8 @@
+kubectl edit mutatingwebhookconfiguration cache-webhook-kubeflow
+
+operations:
+ - DELETE
+
+kubectl edit configmap workflow-controller-configmap -n kubeflow
+
+containerRuntimeExecutor: emissary
